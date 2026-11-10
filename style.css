@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #123c69;
+}
+
+input, select {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    background: #087f5b;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #065f46;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.card {
+    flex: 1;
+    min-width: 180px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #087f5b;
+}
+
+#expenseForm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#expenseForm input,
+#expenseForm select {
+    flex: 1;
+    min-width: 140px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #e8eef5;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.delete-btn:hover {
+    background: #b02a37;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    #expenseForm {
+        flex-direction: column;
+    }
+
+    #expenseForm input,
+    #expenseForm select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .summary-cards {
+        flex-direction: column;
+    }
+}
